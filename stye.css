@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background-color: black;
+  list-style: none;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 60%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: Bebas Neue ;
+}
+
+li:hover {
+  color: gray;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+#banner {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b68efe81-226b-4bb6-bdab-b706497c230f/d8aexop-bd9a8d0e-6c74-4c08-9ac8-e2e5d2e2ebfb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2OGVmZTgxLTIyNmItNGJiNi1iZGFiLWI3MDY0OTdjMjMwZlwvZDhhZXhvcC1iZDlhOGQwZS02Yzc0LTRjMDgtOWFjOC1lMmU1ZDJlMmViZmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xxQ1jRKsHEkFmph74_QzPLInmdFk2orRwEKfsa59n_U");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#trailer-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  position: center;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trailer {
+  width: 50%;
+}
+
+#sinopse {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.description {
+  color: #fff;
+  font-size: 19px;
+  font-family: Bebas Neue;
+  width: 70%;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  background-color: gray;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .8s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: red;
+  color: #000;
+}
+
+.video {
+  position: center;
+}
+
+.actor-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.card {
+  width: 85%;
+  height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: Bebas Neue;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.banner-1 {
+  background-image: url("https://i.pinimg.com/736x/d5/38/3f/d5383fb5e26f3c2aedef4211b734067b.jpg");
+}
+
+.banner-2 {
+  background-image: url("https://i.ytimg.com/vi/nn5lmqoOMiM/maxresdefault.jpg");
+}
+
+.banner-3 {
+  background-image: url("https://media1.popsugar-assets.com/files/thumbor/S2QtgrqgPqNalYarpjylFeeY2jA/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2022/03/08/814/n/1922283/72f9636d9669d2e5_Jared_Leto_American_Psycho/i/American-Psycho-2000.jpg");
+}
+
+.banner-4 {
+  background-image: url("https://i.pinimg.com/originals/ae/1a/f3/ae1af3272570f2a2d3a13f54a4cf403a.jpg");
+}
+
+.banner-5 {
+background-image: url("https://1.bp.blogspot.com/-63qwY4fCGnA/Vb1AzmN2bYI/AAAAAAAAWyw/T3t35_f8zC4/s1600/Cara%2BSeymour%2BAmerican%2BPsycho.jpg");
+}
+
+.banner-6 {
+  background-image: url("https://static1.personality-database.com/profile_images/6458a5d5dd514d97987b22054c079d1b.png");
+}
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: #fff;
+  font-family: Bebas-Neue;
+}
+
+.footer-navigation {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(max-width: 768px) {
+  .footer-navigation {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #banner {
+    background-position: 70%;
+    background-size: 650px;
+  }
+
+  #trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer {
+    width: 100%;
+  }
+
+  #sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
