@@ -35,7 +35,7 @@ li {
   cursor: pointer;
   font-size: 19px;
   transition: .5s;
-  font-family: Bebas Neue ;
+  font-family: Bebas Neue;
 }
 
 li:hover {
@@ -90,27 +90,34 @@ li:hover {
 }
 
 .button {
-  width: 200px;
-  height: 60px;
-  background-color: gray;
-  color: #fff;
-  padding: 8px 10px;
-  border-radius: 5px;
+  background: transparent;
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 48 px;
+  text-transform: uppercase;
+  padding: 30px 70px;
+  border: 2px solid whitesmoke;
+  border-radius: 32px;
+  transform: translate(0);
+  overflow: hidden;
   cursor: pointer;
-  transition: .8s;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  margin-top: 25px;
-  align-items: center;
 }
 
-.button:hover {
-  background-color: red;
-  color: #000;
+.button::before {
+  content: "";
+  position: absolute;
+  background: whitesmoke;
+  width: 15px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+
+.button:hover::before {
+  left: calc(100% + 32px);
+  transition: 0.75s;
 }
 
 .video {
@@ -144,13 +151,15 @@ li:hover {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0;
-  color: rgba(0 0 0 .5);
-  font-size: 17px;
+  color: white;
+  font-size: 25px;
   font-family: Bebas Neue;
+  filter: grayscale(100%)
 }
 
 .card:hover {
   transform: scale(1.02);
+  filter: grayscale(0);
 }
 
 .banner-1 {
@@ -170,7 +179,7 @@ li:hover {
 }
 
 .banner-5 {
-background-image: url("https://1.bp.blogspot.com/-63qwY4fCGnA/Vb1AzmN2bYI/AAAAAAAAWyw/T3t35_f8zC4/s1600/Cara%2BSeymour%2BAmerican%2BPsycho.jpg");
+  background-image: url("https://1.bp.blogspot.com/-63qwY4fCGnA/Vb1AzmN2bYI/AAAAAAAAWyw/T3t35_f8zC4/s1600/Cara%2BSeymour%2BAmerican%2BPsycho.jpg");
 }
 
 .banner-6 {
@@ -259,34 +268,3 @@ span {
     align-items: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
